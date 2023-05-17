@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabajo Integrador CaC</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav class="navbar bg-dark bg-body-tertiary navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/">
+        <img src="img/codoacodo.png" alt="Logo" style="max-height:5rem;" class="d-inline-block align-text-center">
+        Conf Bs As
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <span class="navbar-text">
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="index.html#carousel">La Conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#oradores" style="color:rgb(154,141,130);">Los Oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#lugar" style="color:rgb(154,141,130);">El Lugar y la Fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#conviertete" style="color:rgb(154,141,130);">Conviertete en
+                Orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color:green;">Comprar Tickets</a>
+            </li>
+          </ul>
+        </div>
+      </span>
+    </div>
+    </div>
+  </nav>
+  <!-- Cards Descuentos -->
+  <div class="container col-6 text-center my-4">
+    <div class="row">
+      <div class="col">
+        <div class="card border-primary rounded-0 mr-0">
+          <div class="card-body">
+            <h5 class="card-title">Estudiante</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Tiene un descuento</h6>
+            <h5 class="card-title">80%</h5>
+            <p class="card-text">* presentar documentación</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-success rounded-0">
+          <div class="card-body">
+            <h5 class="card-title">Trainee</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Tiene un descuento</h6>
+            <h5 class="card-title">50%</h5>
+            <p class="card-text">* presentar documentación</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-warning rounded-0">
+          <div class="card-body">
+            <h5 class="card-title">Junior</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Tiene un descuento</h6>
+            <h5 class="card-title">15%</h5>
+            <p class="card-text">* presentar documentación</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container -->
+  <div class="col-lg-12 justify-content-md-center" id="venta">
+    <div class="row text-center">
+      <p class="text-center separador">Venta</p>
+      <p class="text-center fs-1 separador fw-bold">Valor de Ticket $200</p>
+    </div>
+  </div>
+  <!-- Form Venta -->
+  <br>
+  <div class="container col-6">
+    <form>
+      <div class="row py-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
+        </div>
+      </div>
+        <div class="col">
+          <input type="email" class="form-control" placeholder="Correo" aria-describedby="email" required>
+        </div>
+        <div class="row py-3">
+          <div class="col">
+            <label for="Cantidad" class="form-label">Cantidad</label>
+            <input type="number" class="form-control" id="Cantidad" placeholder="Cantidad" aria-label="Cantidad" required>
+          </div>
+          <div class="col">
+            <label for="Cantegoria" class="form-label">Categoria</label>
+            <select class="form-select" aria-label="Categoria" id="Categoria">
+              <option selected>Sin Categoria</option>
+              <option value="1">Estudiante</option>
+              <option value="2">Trainee</option>
+              <option value="3">Junior</option>
+            </select>
+          </div>
+        </div>
+        <div class="row py-3">
+          <label style="background-color: #cce5ff;">Total a Pagar: $</label>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="" style="background-color: #96c93e; color: white; border-radius: 8px;">Borrar</button>
+          </div>
+          <div class="col">
+            <button type="submit" style="background-color: #96c93e; color: white; border-radius: 8px;">Resumen</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- Footer -->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    style="background-color: #1f5271;">
+    <ul class="nav col justify-content-center">
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Preguntas Frecuentes</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Contáctanos</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Prensa</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Conferencias</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Términos y Condiciones</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Privacidad</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Estudiantes</a></li>
+    </ul>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
