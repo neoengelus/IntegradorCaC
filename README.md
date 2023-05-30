@@ -1,3 +1,3 @@
 # IntegradorCaC
-Trabajo Integrado de Codo a Codo sobre html, css y bootstrap
+Trabajo Integrador de Codo a Codo sobre html, css, bootstrap y javascript
 Consistente en replicar una página o hacer un diseño propio

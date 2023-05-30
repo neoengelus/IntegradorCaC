@@ -94,19 +94,19 @@
     <form>
       <div class="row py-3">
         <div class="col">
-          <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="Nombre">
         </div>
         <div class="col">
-          <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="Apellido">
         </div>
       </div>
         <div class="col">
-          <input type="email" class="form-control" placeholder="Correo" aria-describedby="email" required>
+          <input type="email" class="form-control" placeholder="Correo" aria-describedby="email" id="email">
         </div>
         <div class="row py-3">
           <div class="col">
             <label for="Cantidad" class="form-label">Cantidad</label>
-            <input type="number" class="form-control" id="Cantidad" placeholder="Cantidad" aria-label="Cantidad" required>
+            <input type="number" class="form-control" id="Cantidad" placeholder="Cantidad" aria-label="Cantidad"  min="1" max="20">
           </div>
           <div class="col">
             <label for="Cantegoria" class="form-label">Categoria</label>
@@ -119,14 +119,14 @@
           </div>
         </div>
         <div class="row py-3">
-          <label style="background-color: #cce5ff;">Total a Pagar: $</label>
+          <label style="background-color: #cce5ff;" id="Total">Total a Pagar: $</label>
         </div>
         <div class="row">
           <div class="col">
-            <button class ="btn col-12" type="" style="background-color: #96c93e; color: white; border-radius: 8px;">Borrar</button>
+            <button class ="btn col-12" type="button" style="background-color: #96c93e; color: white; border-radius: 8px;" id="Borrar">Borrar</button>
           </div>
           <div class="col">
-            <button class="btn col-12" type="submit" style="background-color: #96c93e; color: white; border-radius: 8px;">Resumen</button>
+            <button class="btn col-12" type="button" style="background-color: #96c93e; color: white; border-radius: 8px;" id="Resumen">Resumen</button>
           </div>
         </div>
       </div>
@@ -146,6 +146,7 @@
     </ul>
   </footer>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/calcularTickets.js"></script>
 </body>
 
 </html>
